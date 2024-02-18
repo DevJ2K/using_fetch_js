@@ -1,0 +1,114 @@
+/* CSS */
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* #content {
+	text-align: center;
+	display: flex;
+	background-color: red;
+	align-items: center;
+	height: 60vh;
+} */
+
+#content {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #333;
+}
+
+#content.card {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.dark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #333;
+}
+
+.dark-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 16px;
+    border: 2px solid #ccc;
+}
+
+.dark-form h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.dark-form h6 {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.dark-form input[type="text"],
+.dark-form input[type="email"],
+.dark-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 18px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.dark-form textarea {
+    resize: vertical;
+}
+
+.dark-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-form button:hover {
+    background-color: #666;
+}
+
+#card {
+	display: block;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+	display: none;
+	width: 45px;
+	aspect-ratio: .75;
+	--c: no-repeat linear-gradient(#000 0 0);
+	background:
+	  var(--c) 0%   100%,
+	  var(--c) 50%  100%,
+	  var(--c) 100% 100%;
+	background-size: 20% 65%;
+	animation: l5 1s infinite linear;
+  }
+  @keyframes l5 {
+	20% {background-position: 0% 50% ,50% 100%,100% 100%}
+	40% {background-position: 0% 0%  ,50% 50% ,100% 100%}
+	60% {background-position: 0% 100%,50% 0%  ,100% 50% }
+	80% {background-position: 0% 100%,50% 100%,100% 0%  }
+  }
